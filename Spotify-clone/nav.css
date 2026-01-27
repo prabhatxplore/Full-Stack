@@ -1,0 +1,143 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    padding: 0px 8px;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav_mid {
+    align-items: center;
+    width: 100%;
+}
+
+
+.nav_right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.nav_right ul {
+    list-style: none;
+    display: flex;
+    gap: 23px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
+
+.nav_mid_div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search_box {
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 3rem;
+    padding: 0px 14px;
+
+
+
+}
+
+.search_btn {
+    color: rgb(179, 179, 179);
+    font-size: 1.37rem;
+}
+
+.search_input {
+    background: none;
+    color: white;
+    width: 20rem;
+    border: none;
+    border-right: 2px solid rgb(179, 179, 179);
+    height: 1.4rem;
+    padding-left: 4px;
+    font-weight: 500;
+    font-size: 1.07rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.browse {
+    color: rgb(179, 179, 179);
+    font-size: 1.37rem;
+}
+
+.logo {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.home {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: rgb(179, 179, 179);
+    border-radius: 100%;
+    padding: 7px;
+    margin: 0 7px;
+}
+
+
+
+
+
+
+.install {
+    display: flex;
+    gap: 10px;
+}
+
+.install_btn {}
+
+.authenticate {
+    display: flex;
+    gap: 7px;
+
+}
+
+.signup {
+    width: 4rem;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.login {
+    border-radius: 50px;
+    border: none;
+    width: 6.7rem;
+    height: 3rem;
+    align-items: normal;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.hover_light {
+    color: rgb(179, 179, 179);
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.hover_light:hover {
+    color: white;
+}

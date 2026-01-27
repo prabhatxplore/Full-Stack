@@ -1,0 +1,102 @@
+.left_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+
+    color: rgb(179, 179, 179);
+    font-weight: 600;
+    padding: 0 14px;
+}
+
+.fa-plus {
+
+}
+
+.text_lib {
+    font-size: 1.2rem;
+
+    color: white;
+}
+
+.plus {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+    border-radius: 25px;
+    padding: 11px 13px;
+    background: #2A2A2A;
+}
+
+.create_lib {
+    color: white;
+
+}
+
+.left_container_wrapper {
+    width: 100%;
+}
+
+.container_boss_lib {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 11px;
+    height: 100%;
+}
+
+.box_container_lib {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+
+}
+
+.lib_cont_head {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.lib_cont_sub_head {
+    font-size: 0.85rem;
+    color: white;
+}
+
+.create_playlist {
+    margin-top: 6px;
+    border-radius: 50px;
+    border: none;
+    width: fit-content;
+    padding: 0 1rem;
+    height: 2.5rem;
+    align-items: normal;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+}
+
+.left_footer {
+    color: #AEB3B3;
+    font-size: 10px;
+
+
+}
+
+.left_footer_pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 10px;
+}
