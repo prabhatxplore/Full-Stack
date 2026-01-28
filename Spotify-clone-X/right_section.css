@@ -1,4 +1,7 @@
-.right_section {}
+.right_section {
+    overflow: hidden;
+    width: 100%;
+}
 
 .wrap {
     padding: 10px;
@@ -46,6 +49,13 @@
 .music_card:hover {
     background-color: #222222;
 }
+
+.music_card:hover .music_play_btn {
+    opacity: 1;
+    transform: translate(127px, -48px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
 .music_play_btn{
     position: absolute;
     z-index: 10;
@@ -60,10 +70,7 @@
     opacity: 0;
     transition: all ease-in 0.2s;
 }
-.music_play_btn:hover{
-    transform: translate(127px, -48px);
-    opacity: 1;
-}
+
 .img_title{
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -71,4 +78,15 @@
 .img_desc{
     color: #AEB3B3;
     font-size: 0.73rem;
+}
+
+.trending_song_feed{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.trending_song_feed::-webkit-scrollbar {
+    display: none;
 }

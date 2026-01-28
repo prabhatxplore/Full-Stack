@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="left_section.css">
     <link rel="stylesheet" href="right_section.css">
+    <link rel="stylesheet" href="play.css">
 
 </head>
 
@@ -33,7 +34,7 @@
                     <i class="fa-solid fa-house "></i>
                 </div>
                 <div class="search_box hover_light">
-                    <div class="search_btn ">
+                    <div class="search_btn pressFeel">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <input placeholder="What do you want to play?" class="search_input" type="text">
@@ -112,15 +113,15 @@
                     <p class="text_trending_songs">Trending Songs</p>
                     <p class="text_showall">Showall</p>
                 </div>
-                <div class="trending_song_feed">
-                    <div class="music_card">
-                        <img src="Images\1.jpg" alt="">
+                <div class="trending_song_feed" id="trending_section">
+                    <!-- <div class="music_card">
+                        <img src="Images/1.jpg" alt="">
                         <div class="music_play_btn">
                             <i class="fa-solid fa-circle-play"></i>
                         </div>
                         <div class="img_title">About You</div>
                         <div class="img_desc">1975 about you song</div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -128,7 +129,35 @@
         </div>
 
     </main>
-    <!-- Player -->
+    <div class="play">
+        <div class="play_wrapper">
+            <div class="img_play">
+
+                <img id="foot_image_photo" src="Images\1.jpg" alt="">
+            </div>
+            <div class="play_contents">
+                <p class="play_text" id="foot_bar_text">
+                    About You
+                </p>
+                <div class="controls">
+                    <div class="forward">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="pause">
+                        <i id="play" class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="back">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+
+                </div>
+
+                <input type="range" value="0" id="progressbar">
+            </div>
+
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
 
