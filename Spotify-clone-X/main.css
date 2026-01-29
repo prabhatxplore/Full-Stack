@@ -1,5 +1,5 @@
 main {
-    max-height: calc(100vh - 4.5rem);
+    height: calc(100vh - 4.5rem);
     display: flex;
     justify-content: space-around;
     gap: 8px;
@@ -18,4 +18,17 @@ main {
     border-radius: 10px;
     background-color: #121212;
     flex: 3;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .left_section {
+        display: none !important;
+    }
+
+    .right_section {
+        flex: 1;
+    }
 }

@@ -7,6 +7,8 @@ nav {
     align-items: center;
     color: white;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
+    box-sizing: border-box; /* ensure padding doesn't increase total width */
 }
 
 .nav_mid {
@@ -130,11 +132,13 @@ nav {
     font-size: 0.9rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    transition:all ease-in-out 0.3s 
+    transition: all ease-in-out 0.3s
 }
-.login:hover{
+
+.login:hover {
     text-decoration-line: underline;
 }
+
 .hover_light {
     color: rgb(179, 179, 179);
     transition: ease-in-out 0.1s;
@@ -143,4 +147,59 @@ nav {
 
 .hover_light:hover {
     color: white;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0px 0px;
+        gap: 0px;
+    }
+
+    .nav_right ul {
+        display: none;
+
+
+    }
+
+    .search_input {
+        display: none;
+    }
+
+    .browse {
+        display: none;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    .logo {
+        font-size: 2rem;
+        padding: 0px;
+    }
+
+    .nav_mid_div {
+        margin-left: 0px;
+    }
+
+    .nav_mid {
+        align-items: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 1165px) {
+    .nav_right ul {
+        display: none;
+
+
+    }
+}
+
+@media (max-width: 378px) {
+    .search_box {
+        display: none;
+
+    }
 }

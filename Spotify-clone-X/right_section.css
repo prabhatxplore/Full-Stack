@@ -1,6 +1,8 @@
 .right_section {
     overflow: hidden;
     width: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 .wrap {
@@ -9,6 +11,7 @@
     margin: auto;
     height: 10vh;
     color: white;
+    /* display: flex; */
 
 }
 
@@ -17,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    
 }
 
 .text_trending_songs {
@@ -56,7 +60,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
-.music_play_btn{
+.music_play_btn {
     position: absolute;
     z-index: 10;
     font-size: 2.5rem;
@@ -71,22 +75,40 @@
     transition: all ease-in 0.2s;
 }
 
-.img_title{
+.img_title {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
-.img_desc{
+
+.img_desc {
     color: #AEB3B3;
     font-size: 0.73rem;
 }
 
-.trending_song_feed{
+.trending_song_feed {
     display: flex;
     overflow-x: scroll;
-    overflow-y: hidden;
+
     scrollbar-width: none;
 }
 
 .trending_song_feed::-webkit-scrollbar {
     display: none;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #popular_section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right_section {
+        overflow:   scroll;
+    }
+    .right_section::-webkit-scrollbar {
+        
+    }
 }
